@@ -1,0 +1,10 @@
+jdk:
+  - openjdk8
+before_install:
+   - ./.travis.sh
+install:
+   # - echo "Running a custom install command"
+   - ./sbt ci-release
+env:
+   # MYVAR: "custom environment variable"
+   TRAVIS_SCALA_VERSION: 2.12.10
